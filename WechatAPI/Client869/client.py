@@ -47,7 +47,7 @@ KEY_LOGIN_ERRMSG_CANDIDATES = ("loginErrMsg", "LoginErrMsg", "errMsg", "ErrMsg",
 
 PATH_FALLBACK_CANDIDATES = {
     "/login/GetLoginQrCodeNewDirect": [
-        "/login/GetLoginQrCodeNew",
+        "/login/HarmonyLoginApi",
         "/login/GetLoginQrCodeNewX",
         "/login/GetLoginQrCodeNewDirect",
     ],
