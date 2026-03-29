@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  xbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xbot
+    restart: always
+    ports:
+      - "9090:9090"
+      - "3000:3000"
+    environment:
+      TZ: Asia/Shanghai
+      OPENCLAW_AUTO_INSTALL: "1"
+      OPENCLAW_STATE_DIR: /data/openclaw
+    volumes:
+      - ./main_config.toml:/app/main_config.toml
+      - ./plugins:/app/plugins
+      - ./resource:/app/resource
+      - ./database:/app/database
+      - ./logs:/app/logs
+      - openclaw-state:/data/openclaw
+
+volumes:
+  openclaw-state:
+    name: xbot

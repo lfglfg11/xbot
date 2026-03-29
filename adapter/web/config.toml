@@ -1,0 +1,24 @@
+[adapter]
+name = "web"
+enabled = false
+module = "adapter.web"
+class = "WebAdapter"
+replyQueue = "allbot_reply:web"
+replyMaxRetry = 3
+replyRetryInterval = 2
+logEnabled = true
+logLevel = "INFO"
+
+[web]
+enable = false
+platform = "web"
+aliases = ["webchat"]
+botWxid = ""
+logRawMessage = true
+
+[web.redis]
+host = "127.0.0.1"
+port = 6379
+db = 0
+password = ""
+queue = "allbot"

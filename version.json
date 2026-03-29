@@ -1,0 +1,9 @@
+{
+  "version": "v2.0.0-Beta",
+  "last_check": "2026-03-29T13:36:03.140157",
+  "update_available": true,
+  "force_update": true,
+  "latest_version": "v2.0.0-Beta",
+  "update_url": "https://github.com/NanSsye/xbot",
+  "update_description": "### 更新内容\n\n新版本新气象\n协议完全独立出来为单独容器，不在集成到框架中。\n请勿直接跟更新，需要根据群中的docker-compose.yml，构建新的框架和协议。"
+}
